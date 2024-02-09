@@ -4,11 +4,13 @@ module tb ();
    logic        a;
    logic 	b;
    logic 	c;
-   logic 	y;
+   logic 	s;
+   logic    cout;
    logic        clk;   
    
   // instantiate device under test
-   silly dut (a, b, c, y);
+   silly dut (a, b, c, s, cout);
+   
  ////////////////////////////////////////////////////////////////////
    // 20 ns clock
    initial 
