@@ -11,18 +11,18 @@ z2
 cModel Technology
 Z0 dC:/Users/cleme/OneDrive - Oklahoma A and M System/Documents/dldspring2024/Lab1/SV
 T_opt
-!s110 1708713384
-V_PN_;^bhYK2T=>J<<J4F`2
+Z1 !s110 1708713739
+VV7V6TXa6QNaFN?o0J8AVP2
 04 2 4 work tb fast 0
-=1-7c214adff665-65d8e5a7-387-4dfc
+=1-7c214adff665-65d8e70b-f4-7198
 !s124 OEM100
 o-quiet -auto_acc_if_foreign -work work +acc
-Z1 tCvgOpt 0
+Z2 tCvgOpt 0
 n@_opt
 OL;O;2021.3;73
 vRCA
-Z2 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
-Z3 !s110 1708713383
+Z3 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+R1
 !i10b 1
 !s100 TaITj5U8;Czn:G7BJ>lFz2
 I]om139RM6CibVCNn_Ya0T0
@@ -38,16 +38,16 @@ Z8 OL;L;2021.3;73
 r1
 !s85 0
 31
-Z9 !s108 1708713383.000000
+Z9 !s108 1708713738.000000
 Z10 !s107 silly_tb.sv|silly.sv|
-Z11 !s90 -reportprogress|300|silly.sv|silly_tb.sv|
+Z11 !s90 silly.sv|silly_tb.sv|
 !i113 0
 Z12 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
-R1
+R2
 n@r@c@a
 vsilly
-R2
 R3
+R1
 !i10b 1
 !s100 R2A3b7Q;[^N^V3gOHgG9k0
 ILA1ao?n9OGjJb2OT^G;:z2
@@ -68,16 +68,16 @@ R10
 R11
 !i113 0
 R12
-R1
-vtb
 R2
+vtb
 R3
+R1
 !i10b 1
 !s100 <S_a<HC;L4naGKai<3?zB2
 I<?cRaN4FWFaNgF]l70kj>2
 S1
 R0
-w1708713290
+w1708713729
 8silly_tb.sv
 Fsilly_tb.sv
 !i122 0
@@ -92,4 +92,4 @@ R10
 R11
 !i113 0
 R12
-R1
+R2
