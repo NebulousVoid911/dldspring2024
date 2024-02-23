@@ -1,0 +1,28 @@
+# //  ModelSim SE-64 2021.3 Jul 13 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim SE-64 and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# do silly.do
+# Model Technology ModelSim SE-64 vlog 2021.3 Compiler 2021.07 Jul 13 2021
+# Start time: 00:46:16 on Feb 23,2024
+# vlog -reportprogress 300 silly.sv silly_tb.sv 
+# -- Compiling module silly
+# -- Compiling module RCA
+# -- Compiling module tb
+# ** Error: silly_tb.sv(14): (vlog-13282) 'dut' already declared in this scope.
+# End time: 00:46:16 on Feb 23,2024, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# ** Error: C:/modeltech64_2021.3/win64/vlog failed.
+# Error in macro ./silly.do line 30
+# C:/modeltech64_2021.3/win64/vlog failed.
+#     while executing
+# "vlog silly.sv silly_tb.sv"

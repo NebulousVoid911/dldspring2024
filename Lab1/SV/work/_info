@@ -1,0 +1,59 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/Users/cleme/OneDrive/Documents/GitHub/dldspring2024/Lab1/SV
+vRCA
+Z1 DXx6 sv_std 3 std 0 22 9oUSJO;AeEaW`l:M@^WG92
+Z2 !s110 1708670776
+!i10b 1
+!s100 oQ0<efz22:6?i0jHMM1UF2
+I:Bm<M`2MQBGG2Saeh]RcP3
+S1
+R0
+Z3 w1708670295
+Z4 8silly.sv
+Z5 Fsilly.sv
+!i122 0
+L0 8 10
+Z6 VDg1SIo80bB@j0V0VzS_@n1
+Z7 OL;L;2021.3;73
+r1
+!s85 0
+31
+Z8 !s108 1708670776.000000
+!s107 silly_tb.sv|silly.sv|
+Z9 !s90 -reportprogress|300|silly.sv|silly_tb.sv|
+!i113 0
+Z10 o-L mtiAvm -L mtiRnm -L mtiOvm -L mtiUvm -L mtiUPF -L infact
+Z11 tCvgOpt 0
+n@r@c@a
+vsilly
+R1
+R2
+!i10b 1
+!s100 R2A3b7Q;[^N^V3gOHgG9k0
+ILA1ao?n9OGjJb2OT^G;:z2
+S1
+R0
+R3
+R4
+R5
+!i122 0
+L0 1 6
+R6
+R7
+r1
+!s85 0
+31
+R8
+Z12 !s107 silly_tb.sv|silly.sv|
+R9
+!i113 0
+R10
+R11

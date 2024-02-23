@@ -11,6 +11,8 @@ module tb ();
   // instantiate device under test
    silly dut (a, b, c, s, cout);
    
+   RCA dut (a, b, c, s, cout);
+
  ////////////////////////////////////////////////////////////////////
    // 20 ns clock
    initial 
