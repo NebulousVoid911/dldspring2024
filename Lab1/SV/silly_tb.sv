@@ -1,18 +1,24 @@
 `timescale 1ns / 1ps
 module tb ();
 
-   logic        a;
-   logic 	b;
+   logic        [3:0]a,b;
    logic 	c;
-   logic 	s;
-   logic    cout;
+   logic 	[4:0]sum;
+   logic    [4:0]sum_correct;
+   
    logic        clk;   
    
-  // instantiate device under test
-   silly dut (a, b, c, s, cout);
-   
- ////////////////////////////////////////////////////////////////////
-   // 20 ns clock
+
+
+   integer handle3;
+integer desc3;
+integer i;
+
+// instantiate device under test
+RCA dut (a, b, c, sum[3:0], sum[4]);
+assign sum_correct = a + b + c;
+
+// 20 ns clock
    initial 
      begin	
 	clk = 1'b1;
@@ -20,44 +26,33 @@ module tb ();
      end
 
 
-   initial
-     begin
-    
-	#0   a = 1'b0;	
-	#0   b = 1'b0;
-	#0   c = 1'b0;
 
-	#20  a = 1'b1;
-	#0   b = 1'b0;
-	#0   c = 1'b0;
+initial
 
-	#20  a = 1'b0;
-	#0   b = 1'b1;
-	#0   c = 1'b0;
+begin
+	handle3 = $fopen("rca.out");
+	desc3 = handle3;
+	#3020 $finish;
+end
 
-	#20  a = 1'b1;
-	#0   b = 1'b1;
-	#0   c = 1'b0;
+initial
 
-	#0   a = 1'b0;	
-	#0   b = 1'b0;
-	#0   c = 1'b1;
-
-	#20  a = 1'b1;
-	#0   b = 1'b0;
-	#0   c = 1'b1;
-
-	#20  a = 1'b0;
-	#0   b = 1'b1;
-	#0   c = 1'b1;
-
-	#20  a = 1'b1;
-	#0   b = 1'b1;
-	#0   c = 1'b1;		
-
-
-	
-     end
+begin
+for (i=0; i < 150; i=i+1)
+begin
+// Put vectors before beginning of clk
+@(posedge clk)
+begin
+a = $random;
+b = $random;
+c = $random;
+end
+@(negedge clk)
+begin
+$fdisplay(desc3, "%h %h |%h | %h | %h | %b", a, b, c,  sum, sum_correct, (sum == sum_correct));
+end
+end // @(negedge clk)
+end
 
    
 endmodule
