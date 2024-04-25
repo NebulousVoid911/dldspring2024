@@ -27,7 +27,7 @@ if [file exists work] {
 vlib work
 
 # compile source files
-vlog flopr.sv top.sv tb.sv datapath.sv
+vlog flopr.sv adder.sv sub.sv top.sv tb.sv
 
 # start and run simulation
 vsim -voptargs=+acc work.tb
